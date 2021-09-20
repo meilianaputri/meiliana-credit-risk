@@ -65,8 +65,8 @@ with open("[MODULE 8] Rapidminer\OHE-1.0.0.pkl", "rb") as f:
 with open("[MODULE 8] Rapidminer\COL-NAME1.0.0.pkl", "rb") as f:
 	cat_columns = pickle.load(f)
 
-with open("[MODULE 8] Rapidminer\Mei-LR-1.0.0.pkl", "rb") as f:
-	modelLR = pickle.load(f)
+with open("[MODULE 8] Rapidminer\Mei-RF-1.0.0.pkl", "rb") as f:
+	modelRF = pickle.load(f)
 
 '''
   cat_column : 
@@ -98,7 +98,7 @@ def preprocess(data):
 
 
 def pred(data):
-  model = modelLR
+  model = modelRF
   all_features = ['person_home_ownership_OTHER', 'person_home_ownership_OWN', 'person_home_ownership_RENT', 'loan_intent_EDUCATION', 'loan_intent_HOMEIMPROVEMENT', 'loan_intent_MEDICAL', 'loan_intent_PERSONAL', 'loan_intent_VENTURE', 'loan_grade_B', 'loan_grade_C', 'loan_grade_D', 'loan_grade_E', 'loan_grade_F', 'loan_grade_G', 'cb_person_default_on_file_Y', 'person_age_WOE', 'loan_int_rate_WOE', 'loan_percent_income_WOE', 'person_income_WOE', 'loan_amnt_WOE', 'person_emp_length_WOE', 'cb_person_cred_hist_length_WOE']
   
   print('cek')
