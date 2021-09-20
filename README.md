@@ -39,7 +39,7 @@ Performance for Random Forest:
 Performance for Logistic Regression:
 ![image](https://user-images.githubusercontent.com/76585709/133971106-03f890d9-9bb9-4cd1-8970-7c11cfdb4f7b.png)
 
-Actually, model use random forest give better performance than logistic. However, logistic regression more interpretable than randomforest, so logistic regression could be the better choice for modelling this case.
+Model uses random forest give better performance than logistic regression, so better to choose random forest modelling than logistic regression. But if the goal of modelling is to know how many times the effect of the variable on the target compared to other variables (using coefisient regression), better use logistic regression.
 
 ## Input Format
 {'person_age': 28,
