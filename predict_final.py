@@ -56,16 +56,16 @@ test_input = {'person_age': 28,
 
 
 
-with open("[MODULE 8] Rapidminer\WOE-1.0.0.pkl", "rb") as f:
+with open("WOE-1.0.0.pkl", "rb") as f:
 	dict_woe = pickle.load(f)
 
-with open("[MODULE 8] Rapidminer\OHE-1.0.0.pkl", "rb") as f:
+with open("OHE-1.0.0.pkl", "rb") as f:
 	ohe = pickle.load(f)
 
-with open("[MODULE 8] Rapidminer\COL-NAME1.0.0.pkl", "rb") as f:
+with open("COL-NAME1.0.0.pkl", "rb") as f:
 	cat_columns = pickle.load(f)
 
-with open("[MODULE 8] Rapidminer\Mei-RF-1.0.0.pkl", "rb") as f:
+with open("Mei-RF-1.0.0.pkl", "rb") as f:
 	modelRF = pickle.load(f)
 
 '''
